@@ -1,6 +1,6 @@
 # Aave Flash Loan Contract
 
-Welcome to the Aave Flash Loan Contract repository. This project showcases a basic implementation of a flash loan contract for Aave v3, built using the Hardhat framework. The primary goal of this project is to provide a simple example of how flash loans work within the Aave ecosystem.
+Welcome to the Aave Flash Loan Contract repository. This project showcases a basic implementation of a flash loan contract for Aave v3, using the Hardhat framework. The primary goal of this project is to provide a simple example of how flash loans work within the Aave ecosystem.
 
 ## Table of Contents
 - [What is a Flash Loan?](#what-is-a-flash-loan)
@@ -43,9 +43,9 @@ To explore and interact with the Aave Flash Loan Contract, follow these steps:
 
 3. Install the necessary dependencies by running the following command in your terminal:
 
-   ```bash
+ ```bash
    npm install
-   ```
+ ```
 
 4. You can now deploy the flash loan contract and experiment with flash loans.
 
@@ -61,4 +61,4 @@ This project is licensed under the MIT License. For details, please refer to the
 
 As the DeFi ecosystem continues to evolve, we will monitor and update this project to align with the latest developments and best practices. Stay tuned for updates and improvements!
 
-For more details on flash loans and how they work in Aave, please refer to the [Aave Documentation](https://docs.aave.com/developers/getting-started/readme).
+For more details on flash loans and how they work in Aave, please refer to the [Aave Documentation](https://docs.aave.com/developers/getting-started/readme). 
