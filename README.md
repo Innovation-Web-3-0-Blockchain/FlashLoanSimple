@@ -9,6 +9,9 @@ Welcome to the Aave Flash Loan Contract repository. This project showcases a bas
 - [Verification and Security](#verification-and-security)
 - [Commented Code](#commented-code)
 - [Getting Started](#getting-started)
+- [Deployment](#deployment)
+- [Test](#test)
+- [Get Assets](#get-assets)
 - [Contributions](#contributions)
 - [License](#license)
 - [Project Updates](#project-updates)
@@ -49,6 +52,57 @@ To explore and interact with the Aave Flash Loan Contract, follow these steps:
 
 4. You can now deploy the flash loan contract and experiment with flash loans.
 
+**For easier understanding of how flash loans work, we did not write the deployment script. We used Remix to deploy the contract.**
+
+## Deployment
+
+To deploy the flash loan contract, follow these steps:
+
+1. Visit the Remix Ethereum website: [Remix Ethereum](https://remix.ethereum.org/)
+
+2. Import the flash loan smart contract from the contracts repository.
+
+3. Compile the contract on Remix with the compiler version 0.8.10.
+
+4. Fork the network you want to use. We recommend using your own RPC URL for better reliability. You can create your own API keys on the Infura website: [Infura](https://www.infura.io/)
+
+   You can also use a public RPC URL. Visit the Chainlist website for any public URL on the network you want to use: [Chainlist](https://chainlist.org/)
+
+5. If you use your own RPC URL, create a `.env` file and add the following:
+
+   ```
+   YOUR_API_KEY= " Paste your key here "
+   YOUR_PRIVATE_KEY= " Paste your Account/Wallet private key here "
+   ```
+
+6. Command to use Ethereum fork with your own RPC URL:
+
+   ```bash
+   npx hardhat node --fork https://mainnet.infura.io/v3/{YOUR_API_KEY}
+   ```
+
+   Command to use Ethereum for public RPC URL:
+
+   ```bash
+   npx hardhat node --fork https://ethereum.publicnode.com
+   ```
+
+7. To deploy the flash loan smart contract on the local blockchain, connect Remix with Hardhat by setting the environment with the "Dev - Hardhat Provider" option.
+
+8. For the address provider, you can use the pool provider address provided by Aave. Visit their website for the specific address of the network you want to use: [Aave Deployed Contracts](https://docs.aave.com/developers/deployed-contracts/v3-mainnet)
+
+9. Make sure to save the deployed contract address.
+
+**IMPORTANT NOTE:** Make sure that your `.env` file is private, and that you never share its contents.
+
+## Test
+
+**Will be updated soon**
+
+## Get Assets 
+
+**Will be updated soon**
+
 ## Contributions
 
 Contributions to this project are welcome and encouraged. If you identify any bugs, have feature requests, or would like to improve the project, please open an issue or submit a pull request. We appreciate your interest and contributions.
@@ -61,4 +115,4 @@ This project is licensed under the MIT License. For details, please refer to the
 
 As the DeFi ecosystem continues to evolve, we will monitor and update this project to align with the latest developments and best practices. Stay tuned for updates and improvements!
 
-For more details on flash loans and how they work in Aave, please refer to the [Aave Documentation](https://docs.aave.com/developers/getting-started/readme). 
+For more details on flash loans and how they work in Aave, please refer to the [Aave Documentation](https://docs.aave.com/developers/getting-started/readme).

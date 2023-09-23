@@ -22,8 +22,10 @@ contract SimpleFlashLoan is FlashLoanSimpleReceiverBase {
         bytes memory params = "";
         uint16 referralCode = 0;
 
+        // Log the asset and its balance before the flash loan
         emit Log(asset, IERC20(asset).balanceOf(address(this)));
 
+        // Initiate the flash loan
         POOL.flashLoanSimple(
             receiver,
             asset,
@@ -43,14 +45,25 @@ contract SimpleFlashLoan is FlashLoanSimpleReceiverBase {
     ) external returns (bool) {
 
         // 👇 Your custom logic for the flash loan should be implemented here 👇
-
-                         /** YOUR CUSTOM LOGIC HERE */
+        
+        // This is where you can implement your custom logic for the flash loan.
+        // You can use 'asset' to identify the token being borrowed, 'amount' for the borrowed amount,
+        // and 'premium' for the premium fee.
+        
+        // Example: 
+        // 1. Use 'asset' and 'amount' to perform some operations
+        // 2. Make sure to repay the flash loan by transferring 'amount' + 'premium' back to Aave
+        // 3. You can also use 'params' to pass additional data if needed.
 
         // 👆 Your custom logic for the flash loan should be implemented above here 👆
 
+        // Log the asset and its balance after the flash loan
         emit Log(asset, IERC20(asset).balanceOf(address(this)));
 
+        // Calculate the total amount owing (amount borrowed + premium)
         uint amountOwing = amount.add(premium);
+
+        // Approve Aave to transfer the amount owing from this contract
         IERC20(asset).approve(address(POOL), amountOwing);
 
         return true;
