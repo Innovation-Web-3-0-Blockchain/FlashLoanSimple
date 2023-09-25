@@ -1,15 +1,14 @@
 {
-  "name": "simple-flash-loan",
+  "name": "aave-simple-flash-loan",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.0",
+    "@openzeppelin/contracts": "^4.9.3"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
     "@aave/core-v3": "^1.17.2",
-    "@openzeppelin/contracts": "^4.9.3",
     "hardhat": "^2.12.7"
-
   }
 }

@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "@aave/core-v3/contracts/flashloan/base/FlashLoanSimpleReceiverBase.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-contract SimpleFlashLoan is FlashLoanSimpleReceiverBase {
+contract FlashLoanSimple is FlashLoanSimpleReceiverBase {
     using SafeMath for uint;
 
     // Event to log asset and balance
